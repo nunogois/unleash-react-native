@@ -9,13 +9,11 @@ export type {
   IStorageProvider
 } from 'unleash-proxy-client'
 export {
-  UnleashClient,
   LocalStorageProvider,
   InMemoryStorageProvider
 } from 'unleash-proxy-client'
-import {
+export {
   FlagContext,
-  FlagProvider,
   useFlag,
   useFlagsStatus,
   useVariant,
@@ -23,17 +21,10 @@ import {
   useUnleashClient
 } from '@unleash/proxy-client-react'
 
-import { storageProvider as defaultStorageProvider } from './storageProvider'
+export { AsyncStorageProvider as defaultStorageProvider } from './asyncStorageProvider'
+export { UnleashClient } from './unleashClient'
+import { FlagProvider } from './FlagProvider'
 
-export {
-  FlagContext,
-  FlagProvider,
-  useFlag,
-  useFlagsStatus,
-  useVariant,
-  useUnleashContext,
-  useUnleashClient,
-  defaultStorageProvider
-}
+export { FlagProvider }
 
 export default FlagProvider

@@ -1,0 +1,17 @@
+{
+  "name": "unleash-react-native",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.1.0",
+    "@unleash/proxy-client-react": "^4.4.0",
+    "react-native-get-random-values": "^1.11.0",
+    "unleash-proxy-client": "^3.6.1"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@nunogois/unleash-react-native",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A React Native / Expo SDK for Unleash",
   "type": "module",
   "module": "dist/index.js",
@@ -11,6 +11,9 @@
       "import": "./dist/index.js",
       "require": "./dist/index.js"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "unleash",

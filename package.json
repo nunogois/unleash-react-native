@@ -1,6 +1,6 @@
 {
   "name": "@nunogois/unleash-react-native",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A React Native / Expo SDK for Unleash",
   "repository": {
     "type": "git",

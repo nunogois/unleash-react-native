@@ -9,6 +9,7 @@
   "type": "module",
   "module": "dist/index.js",
   "main": "dist/index.cjs",
+  "react-native": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {

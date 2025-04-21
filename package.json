@@ -1,15 +1,19 @@
 {
   "name": "@nunogois/unleash-react-native",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A React Native / Expo SDK for Unleash",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nunogois/unleash-react-native.git"
+  },
   "type": "module",
   "module": "dist/index.js",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.js"
+      "require": "./dist/index.cjs"
     }
   },
   "publishConfig": {
@@ -25,20 +29,21 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist"
   },
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "tsup": "^8.4.0",
+    "typescript": "^5.0.0",
+    "@types/react": "^18.2.38"
   },
   "peerDependencies": {
-    "react": "^18.3.1",
-    "typescript": "^5.0.0"
+    "@types/react": "^18.2.38",
+    "react": "^18.2.0"
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^2.1.0",
-    "@types/react": "^18.3.12",
-    "@unleash/proxy-client-react": "^4.5.1",
+    "@react-native-async-storage/async-storage": "^2.1.2",
+    "@unleash/proxy-client-react": "^5.0.0",
     "react-native-get-random-values": "^1.11.0",
-    "unleash-proxy-client": "^3.7.2"
+    "unleash-proxy-client": "^3.7.5"
   }
 }
